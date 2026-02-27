@@ -16,3 +16,6 @@ RUN pip install --pre --no-cache-dir  --index-url https://download.pytorch.org/w
     'torch' \
     'torchaudio' \
     'torchvision'
+
+# Install VeRL for RL post-training (pinned to v0.7.0)
+RUN pip install --no-cache-dir git+https://github.com/verl-project/verl.git@v0.7.0 datasets
